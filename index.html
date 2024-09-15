@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govardhan Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <a href="#" id="logo"><span>Gova</span>rdhan&#9812;</a>
+
+        <nav id="navBar" class="close-menu">
+            <a href="#" id="close" onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">FAQ</a>
+            <a href="#">Experience</a>
+            <a href="#" id="contact2">Contact Us</a>
+        </nav>
+        <a href="#" id="contact">Contact Us</a>
+        <div id="open" onclick="openMenu()"><i class="fa-solid fa-bars"></i></div>
+
+    </header>
+
+
+    <main id="about">
+
+        <div id="about-box">
+            <h1>Hi,</h1>
+            <h2>I'm <span>Govardhan</span><br>Frontend Developer</h2>
+
+            <p>A front-end developer creates the user interface and experience of websites using HTML, CSS, and
+                JavaScript. They ensure designs are visually appealing, interactive, and responsive across devices.</p>
+
+            <div id="about-btn">
+                <button id="btn1">Contact</button>
+                <button id="btn2">Experience</button>
+            </div>
+
+            <div id="social-media">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+
+        </div>
+
+
+        <img src="./govardhan (1).jpg" alt="">
+
+
+
+    </main>
+
+    <script>
+        let clMenu = document.getElementById("close");
+        let navBar = document.getElementById("navBar");
+        let contact = document.getElementById("contact");
+
+        function closeMenu(){
+            navBar.classList.add("close-menu");
+        }
+        
+        
+        function openMenu(){
+            navBar.classList.remove("close-menu");
+        }
+    </script>
+
+
+
+</body>
+
+</html>
